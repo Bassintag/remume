@@ -1,0 +1,18 @@
+{{#if resume.education}}
+    <section>
+        <h3>
+            {{i18n "Education"}}
+        </h3>
+        {{#resume.education}}
+            <div>
+                <a href="{{url}}" target="_blank">
+                    <h4>
+                        {{institution}}
+                    </h4>
+                    <p>{{studyType}} - {{area}}</p>
+                    <p>{{startDate}} - {{endDate}}</p>
+                </a>
+            </div>
+        {{/resume.education}}
+    </section>
+{{/if}}

@@ -1,0 +1,15 @@
+{{#if resume.skills}}
+    <section>
+        <h3>{{i18n "Skills"}}</h3>
+        <div class="grid">
+            {{#resume.skills}}
+                <div>
+                    <h4>{{name}}</h4>
+                    <div class="skill-track">
+                        <div class="skill-bar" style="width: {{level}}%"></div>
+                    </div>
+                </div>
+            {{/resume.skills}}
+        </div>
+    </section>
+{{/if}}

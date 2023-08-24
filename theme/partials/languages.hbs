@@ -1,0 +1,11 @@
+{{#if resume.languages}}
+    <section>
+        <h3>{{i18n "Languages"}}</h3>
+        {{#resume.languages}}
+            <div>
+                <h4>{{language}}</h4>
+                <p>{{fluency}}</p>
+            </div>
+        {{/resume.languages}}
+    </section>
+{{/if}}

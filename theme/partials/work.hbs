@@ -1,0 +1,26 @@
+{{#if resume.work}}
+    <section>
+        <h3>{{i18n "Work experience"}}</h3>
+        {{#resume.work}}
+            <div class="timespan-wrapper">
+                <p class="timespan">
+                    {{startDate}} - {{endDate}}
+                </p>
+                <div class="timespan-content">
+                    <a href="{{url}}">
+                        <h4>{{name}}</h4>
+                        <h5>{{position}}</h5>
+                        <p>{{summary}}</p>
+                        {{#if highlights}}
+                            <ul>
+                                {{#highlights}}
+                                    <li>{{.}}</li>
+                                {{/highlights}}
+                            </ul>
+                        {{/if}}
+                    </a>
+                </div>
+            </div>
+        {{/resume.work}}
+    </section>
+{{/if}}

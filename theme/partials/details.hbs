@@ -1,0 +1,39 @@
+{{#resume.basics}}
+    <section class="details">
+        <div class="details-row">
+            <h3 class="details-title">{{i18n "Phone"}}</h3>
+            <p class="details-value">
+                <a href="tel:{{phone}}">{{phone}}</a>
+            </p>
+        </div>
+        <div class="details-row">
+            <h3 class="details-title">{{i18n "Email"}}</h3>
+            <p class="details-value">
+                <a href="mailto:{{email}}">{{email}}</a>
+            </p>
+        </div>
+        <div class="details-row">
+            <h3 class="details-title">{{i18n "Address"}}</h3>
+            <div class="details-value">
+                <p>{{location.address}}</p>
+                <p>{{location.postalCode}} {{location.city}}</p>
+            </div>
+        </div>
+        {{#if url}}
+            <div class="details-row">
+                <h3 class="details-title">{{i18n "Website"}}</h3>
+                <p class="details-value">
+                    <a href="{{url}}" target="_blank">{{url}}</a>
+                </p>
+            </div>
+        {{/if}}
+        {{#profiles}}
+            <div class="details-row">
+                <h3 class="details-title">{{network}}</h3>
+                <p class="details-value">
+                    <a href="{{url}}" target="_blank">{{username}}</a>
+                </p>
+            </div>
+        {{/profiles}}
+    </section>
+{{/resume.basics}}

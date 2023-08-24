@@ -1,0 +1,9 @@
+.idea/
+data/
+node_modules/
+out/
+public/
+
+*.iml
+
+resume.json

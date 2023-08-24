@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+
+    <title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
+
+    <style>
+            {{{css}}}
+    </style>
+
+</head>
+<body>
+<div class="page">
+    <aside>
+        <img src="{{resume.basics.image}}">
+        {{> education}}
+        {{> languages}}
+        {{> details}}
+    </aside>
+    <main>
+        {{#resume.basics}}
+            <header>
+                <h1>{{name}}</h1>
+                <h2>{{label}}</h2>
+            </header>
+            <section>
+                <h3>{{i18n "About me"}}</h3>
+                <p>{{summary}}</p>
+            </section>
+        {{/resume.basics}}
+        {{> work}}
+        {{> skills}}
+    </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "serve": "cross-env RESUME_LANG=fr resume serve -r resume.json -t ./theme/index.js",
+    "build:en": "cross-env RESUME_LANG=en resume export ./out/resume-en.pdf -r resume.json -t ./theme",
+    "build:fr": "cross-env RESUME_LANG=fr resume export ./out/resume-fr.pdf -r resume.json -t ./theme",
+    "build": "npm run build:en && npm run build:fr"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "handlebars": "^4.7.8"
+  }
+}
